@@ -72,7 +72,7 @@ In addition to the rich [features](https://github.com/pinojs/pino/blob/master/do
 
 ### Log Level
 
-The logger detects you current environment and will default an appropriate minimum log level.
+The logger detects the current environment and will default an appropriate minimum log level.
 
 In Development, the default is `trace` while in Production, the default is `warn`.
 
@@ -82,7 +82,7 @@ You can override the default log level via the `LOG_LEVEL` environment variable.
 
 ### Redaction
 
-Everyone has herd or reports that Company X logged emails, or passwords to files or systems that may not have been secured. While RedwoodJS logging won't necessarily prevent that, it does provide you with the mechanism to ensure that won't happen.
+Everyone has heard of stories where Company X logged emails, or passwords to files or systems that may not have been secure. While RedwoodJS logging won't necessarily prevent that, it does provide you with the mechanism to ensure that won't happen.
 
 To redact sensitive information, you can supply paths to keys that hold sensitive data using the [redact option](https://github.com/pinojs/pino/blob/master/docs/redaction.md).
 
@@ -229,7 +229,7 @@ export const logger = createLogger({
 
 ### Customize a Redactions List
 
-While the logger provides default redaction list, you can specify additions keys to redact by either appending them to the list or setting the `redact` option to a new array of keys.
+While the logger provides default redaction list, you can specify additional keys to redact by either appending them to the list or setting the `redact` option to a new array of keys.
 
 Please see [pino's redaction documentation](https://github.com/pinojs/pino/blob/master/docs/redaction.md) for other `redact` options, such as removing both keys and values and path matching.
 
@@ -246,7 +246,7 @@ export const logger = createLogger({
 
 ### Log to a Physical File
 
-If in your development environment or another environment in which you have write access to the filesystem, can can set the `destination` to the location of your file.
+If in your development environment or another environment in which you have write access to the filesystem, set the `destination` to the location of your file.
 
 Note: logging to a file is not permitted if deployed to Netlify or Vercel.
 
